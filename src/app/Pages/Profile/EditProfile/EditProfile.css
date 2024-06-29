@@ -1,0 +1,435 @@
+.editProfileView {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 100000;
+    backdrop-filter: blur(10px);
+    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    display: grid;
+    place-items: center;
+}
+
+.new-project-form-container .close-view-button,
+.editProfileView .close-view-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    height: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    border: 0px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.5px);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.editProfileView .close-view-button:hover { transform: scale(1.1); }
+
+/* Content Container */
+.editProfileView .edit-profile-container {
+    position: relative;
+    width: 68%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 12px;
+}
+
+.editProfileView .edit-profile-container .edit-profile-content-view {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.editProfileView .edit-profile-container .edit-profile-content-view .submit-button {
+    margin-bottom: 40px;
+}
+
+.editProfileView .edit-profile-container .edit-profile-content-view .submit-button button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 24px;
+    background-color: var(--app-blue);
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 24px;
+    border: none;
+}
+
+.editProfileView .edit-profile-content-view .view-title {
+    position: relative;
+    width: calc(100% );
+    height: fit-content;
+    margin-left: 0;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editProfileView .edit-profile-content-view .view-title h1 {
+    margin-top: 12px;
+    color: black;
+}
+
+.editProfileView .edit-profile-container .header-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.editProfileView .edit-profile-container .header-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.editProfileView .image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.editProfileView .hStackEdit {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+}
+
+
+/* Profile Image */
+.editProfileView .profImg-first-last {
+    padding: 0 20px;
+}
+
+.editProfileView .profile-image {
+    position: relative;
+    width: 124px;
+    height: 124px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.editProfileView .edit-profile-container .profile-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.editProfileView .edit-profile-container .large-field-container,
+.editProfileView .edit-profile-container .medium-field-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.editProfileView .edit-profile-container .large-input,
+.editProfileView .edit-profile-container .medium-input {
+    position: relative;
+    height: 30px;
+    font-size: 22px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.085);
+    padding: 0 8px;
+    border-radius: 6px;
+    backdrop-filter: blur(2px);
+}
+.editProfileView .edit-profile-container .medium-input {
+    font-size: 16px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.editProfileView .edit-profile-container .purpose-label {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+
+/* Bio */
+.editProfileView .edit-profile-container .large-textarea {
+    position: relative;
+    width: calc(100% - 16px);
+    height: 200px;
+    resize: none;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.085);
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+}
+
+/* Users Project History - Users Project History - Users Project History - Users Project History */
+.editProfileView .project-add-and-title {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.editProfileView .project-add-and-title .add {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 12px;
+    background-color: var(--app-blue);
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-weight: 700;
+}
+
+.editProfileView .professional-and-project-history-container-scrollview {
+    position: relative;
+    height: 250px;
+    width: calc(100%);
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background: linear-gradient( 90deg, var(--app-blue-5), var(--app-green-5)) ;
+    background-color: var(--app-blue-5);
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.editProfileView .professional-and-project-history-container-scrollview .professional-and-project-history-container-content-view {
+    position: relative;
+    width: auto;
+    height: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item {
+    position: relative;
+    width: fit-content;
+    max-width: 350px;
+    height: calc(100% - 24px);
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 0 8px 3px rgb(0, 0, 0, 0.05);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item:first-of-type { margin: 0; }
+
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item .project-name {
+    font-size: 18px;
+    color: black;
+    font-weight: 600px;
+    margin-top: auto;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item .eighty-characters {
+    font-size: 12px;
+    color: lightgray;
+    font-weight: 500px;
+    margin-top: auto;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item .summary {
+    font-size: 12px;
+    color: gray;
+    font-weight: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item .state {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500px;
+    margin-top: 20px;
+    color: var(--app-green);
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .project-and-experience-item .link-refs {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--app-blue);
+    margin-top: 20px;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .action-buttons {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .action-buttons button {
+    position: relative;
+    border: none;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 4px;
+    font-size: 11px;
+    border-radius: 20px;
+}
+
+.editProfileView .professional-and-project-history-container-content-view .action-buttons .edit {
+    color: var(--app-blue);
+    background-color: var(--app-blue-10);
+}
+.editProfileView .professional-and-project-history-container-content-view .action-buttons .remove {
+    color: var(--app-red);
+    background-color: var(--app-red-10);
+}
+
+/* new-project-form */
+.new-project-form-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    z-index: 100000;
+}
+
+.new-project-form-container .close-view-button {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+.new-project-form-container .new-project-form {
+    position: relative;
+    height: fit-content;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.new-project-form-container .new-project-form .vStack-form-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.new-project-form-container .new-project-form .vStack-form-item:first-of-type { margin: 0; }
+
+.new-project-form-container .new-project-form .vStack-form-item label {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.new-project-form-container .new-project-form .vStack-form-item textarea,
+.new-project-form-container .new-project-form .vStack-form-item input {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.075);
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.new-project-form-container .new-project-form .vStack-form-item input.title {
+    font-weight: 600;
+}
+
+.new-project-form-container .new-project-form .vStack-form-item input.link {
+    color: var(--app-blue-90);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.45);
+}
+
+.new-project-form-container .new-project-form .vStack-form-item textarea {
+    position: relative;
+    -webkit-user-drag: calc(100% - 16px);
+    height: 200px;
+    padding: 4px 8px;
+    resize: none;
+}
+
+.new-project-form-container .new-project-form select {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0, 0.095);
+    color: var(--app-green-90);
+    font-weight: 600;
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.45);
+}
+
+.new-project-form-container .new-project-form .submit {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px;
+    background-color: var(--app-blue);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    margin: 30px auto 0px auto;
+}

@@ -1,0 +1,62 @@
+.filter-button {
+    position: relative;
+    width: fit-content;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    background-color: black;
+    background-color: var(--app-blue-90);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-radius: 2px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px ;
+    backdrop-filter: blur(2px);
+    z-index: 1000000;
+}
+
+.filter-button .filter-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.filter-button .filter-icon img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.filter-button .filter-text {
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    margin-left: 8px;
+}
+
+/* Mobile Rules */
+.content-view.mobile .filter-button {
+    position: fixed;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    background-color: black;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.07),rgba(0, 0, 0, 0.1));
+    background: linear-gradient(90deg, var(--app-green-35), var(--app-green-45), var(--app-green-50) );
+    background-color: var(--app-blue-90);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-radius: 4px;
+    z-index: 1000000;
+    right: 0px;
+}

@@ -1,0 +1,178 @@
+
+.product .dashbord-side-menu-item-container {
+    position: relative;
+    width: 100%;
+    height: calc(100%);
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer {
+    position: relative;
+    width: 100%;
+    height: calc(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li {
+    position: relative;
+    margin-top: 8px;
+    width: calc(100% - 16px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.defered-items.first {
+    margin-top: auto;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.defered-items:last-of-type { 
+    margin-bottom: 40px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.defered-items.first .label-conatainer label { color: black; }
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.defered-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .dashboard-side-menu-item {
+    font-weight: 500;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .dashboard-side-menu-item.active {
+    background: linear-gradient(-90deg, transparent, var(--app-blue-15));
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .dashboard-side-menu-item.active .icon-container .image-cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .dashboard-side-menu-item.active .label-conatainer label { color: black; }
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community {
+    position: relative;
+    width: fit-content;
+    max-width: calc(100% - 40px - 60px);
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( -90deg ,rgba(0,0,0,0.01), rgba(0,0,0,0.07) ) ;
+    background-color: var(--app-blue);
+    padding: 30px;
+    color: white !important;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community:hover {
+    background-color: var(--app-blue);
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community .icon-container {
+    display: grid;
+    place-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community .label-conatainer {
+    display: grid;
+    place-items: center;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community .icon-container label{
+    color: white !important;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer .join-another-community .label-conatainer label {
+    color: white !important;
+    font-weight: 900;
+    text-align: center;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li:first-of-type {
+    margin-top: 0 !important;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li .icon-container {  
+    position: relative;
+    width: 19px;
+    height: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.view-item .icon-container {
+    margin-left: 40px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li .icon-container img { 
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li.view-item .label-conatainer { 
+    margin-left: 12px;
+}
+
+.product .dashbord-side-menu-item-container .dashboard-side-menu-list-conatainer li .label-conatainer label {
+    font-size: 12px;
+    color: gray;
+}
+
+.style-selected-side-dash {
+    position: absolute;
+    right: 0;
+    height: 8px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.dashboard-side-menu-item.active .style-selected-side-dash {
+    height: 55px;
+}
+
+.product .dashbord-side-menu-item-container .defered-items {
+    margin-top: auto;
+}

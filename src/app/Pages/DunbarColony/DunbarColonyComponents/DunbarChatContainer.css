@@ -1,0 +1,616 @@
+
+.DunbarColony .dunbar-chat-container {
+    position: relative;
+    --col-ch-con-pad : 8px;
+    width: calc( 100%  - var(--col-ch-con-pad ) - var(--col-ch-con-pad ));
+    height: calc(100% - var(--col-ch-con-pad ) - var(--col-ch-con-pad ));
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 120px;
+    padding: 8px;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.DunbarColony .dunbar-chat-container .chat-content-messeges-container {
+    position: relative;
+    height: calc(100%) !important;
+    width: 100%;
+}
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-anchor: auto;
+    /* Setting Up Scroll Snap Logic */
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+}
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview .chat-container-contentview {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: auto;
+    padding-bottom: 140px;
+    padding-top: 60px;
+}
+
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview .chat-container-contentview .chat-time-session-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview .chat-container-contentview .chat-time-session-container .chat-session-time {
+    position: relative;
+}
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview .chat-container-contentview .message-item {
+    position: relative;
+    width: calc(100% - 40px - 100px);
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.product .content-view.mobile .DunbarColony .chat-container-contentview .message-item {
+    position: relative;
+    width: calc(100% - 12px);
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.DunbarColony .dunbar-chat-container .chat-container-scrollview .chat-container-contentview .message-item .message-item-image {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    max-width: 25%;
+    border-radius: 12px;
+}
+
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+/* Message Item */
+
+.DunbarColony .message-item-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    border-radius: 12px;
+}
+.DunbarColony .message-item-container:hover {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* More */
+/* More */
+/* More */
+.DunbarColony .message-item-container .more-button {
+    position: relative;
+    width: 24px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 12px;
+    border-radius: 5px;
+    /*  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    padding: 0;
+}
+.DunbarColony .message-item-container .more-button:hover {
+    transform: scale(1.125);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.DunbarColony .message-item-container .more-button .dot {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    margin-left: 1.5px;
+}
+.DunbarColony .message-item-container .more-button .dot:first-of-type { margin: 0;}
+
+/* More Attempt 2 */
+/* More Attempt 2 */
+/* More Attempt 2 */
+/* More Attempt 2 */
+.DunbarColony .message-item-container .more-button {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-left: 8px;
+    border-radius: 6px;
+}
+
+.DunbarColony .message-item-container .more-button:hover {
+    transform: none;
+}
+
+.DunbarColony .message-item-container .more-button .dot {
+    background-color: white;
+}
+
+.DunbarColony .message-item-container .more-button .more-button-comtent {
+    height: 80px;
+    /* background: linear-gradient(var(--app-blue-10), var(--app-blue-5)); */
+    background-color: rgba(255, 255, 255, 0.925);
+    backdrop-filter: blur(12px);
+}
+
+.DunbarColony .message-item-container .more-button .more-button-comtent .options {
+    color: black;
+    font-weight: 500;
+    text-shadow: 0 1px rgba(0 , 0, 0, 0.1);
+}
+
+.DunbarColony .message-item-container .more-button .more-button-comtent .options.red {
+    color: var(--app-red);
+}
+
+.DunbarColony .message-item-container .more-button .more-button-comtent .options:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Thread User Profile */
+/* Thread User Profile */
+/* Thread User Profile */
+.DunbarColony .thread-post-by-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.DunbarColony .thread-post-by-container .userProfile-img-content-container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.DunbarColony .thread-post-by-container .profile-name-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.DunbarColony .thread-post-by-container .userProfile-name {
+    font-size: 14px;
+    margin-left: 12px;
+    font-weight: 600;
+}
+
+.DunbarColony .thread-post-by-container .content-post-by-container .userProfile-nick-name {
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+    color: var(--app-blue);
+}
+
+/* Thread Item Aesthetic */
+/* Thread Item Aesthetic */
+/* Thread Item Aesthetic */
+.DunbarColony .message-item {
+    margin: 0;
+    padding: 0;
+}
+
+.DunbarColony .dunbar-chat-container .message-item img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.85;
+    backdrop-filter: blur(8px);
+}
+
+.DunbarColony .message-item p {
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 4px 7px;
+    left: -7px;
+    border-radius: 3px;
+    background: linear-gradient( 90deg,rgba(0,0,0, 0.02),rgba(0,0,0,0), rgba(0,0,0,0));
+}
+
+/* Date Of Addition */
+/* Date Of Addition */
+/* Date Of Addition */
+.DunbarColony .date-of-addition {
+    position: relative;
+    width: fit-content; 
+    height: fit-content;
+    font-size: 12px; 
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+/* Chat Container And Controls */
+.DunbarColony .chat-content-and-controls {
+    position: absolute;
+    z-index: 20000000;
+    width: calc(100% - 0px - 8px);
+    height: calc( 140px - 40px);
+    /*  */
+    left: 0px;
+    bottom: 0px;
+    padding: 4px;
+    /*  */
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.85);
+    /*  */
+    border-radius: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    backdrop-filter: blur(12px);
+}
+
+.DunbarColony .dunbar-chat-container .chat-box-container {
+    position: relative;
+    /*  */
+    height: calc(100% - 12px - 3px);
+    width: calc(100% - 12px - 3px - 120px);
+    padding: 6px;
+    /*  */
+    z-index: 1;
+}
+
+.DunbarColony .dunbar-chat-container .chat-box-container .chat-box {
+    position: relative;
+    --chat-font-family: 'Roboto';
+    --chat-font-font-size: 14px;
+    /*  */
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    padding: 8px;
+    /*  */
+    border: none;
+    border-radius: 8px;
+    font-family: var(--chat-font-family);
+    font-size: var(--chat-font-font-size);
+    background-color: transparent;
+    /*  */
+    resize: none;
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.DunbarColony .dunbar-chat-container .chat-box:empty:before {
+    content: attr(placeholder);
+    position: absolute;
+    left: 0;
+    color: #aaa;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    direction: ltr;
+    padding: 0px 12px;
+    font-family: var(--chat-font-family);
+    font-size: var(--chat-font-font-size);
+}
+
+.DunbarColony .dunbar-chat-container .chat-box img {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    max-height: 80px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+
+.DunbarColony .dunbar-chat-container .chat-box-container .chat-box-media-mode {
+    position: relative;
+    height: calc(100%);
+    max-height: 100px;
+    width: calc(100%);
+    margin-top: 4px;
+    overflow: hidden;
+    background-color: transparent;
+    /*  */
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+}
+
+.DunbarColony .chat-box-media-mode .image-select {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: calc(100% - 4px);
+    aspect-ratio: 1 / 1;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+}
+
+.DunbarColony .chat-box-media-mode .image-select img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.DunbarColony .chat-box-media-mode .image-select input {
+    position: absolute;
+    visibility: none;
+    display: none;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+
+.DunbarColony .chat-box-media-mode .image-select input::file-selector-button {
+    visibility: none;
+    display: none;
+}
+
+
+
+.DunbarColony .dunbar-chat-container .chat-box-container .chat-box-media-mode .chat-box-image-mode-textarea {
+    position: relative;
+    --chat-font-family: 'Roboto';
+    --chat-font-font-size: 14px;
+    height: calc(100% - 24px); /* Includes Padding, 2px border, a little extra space, and top margin */
+    max-height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px 12px;
+    border: 2px solid var(--app-blue);
+    border-radius: 12px;
+    font-family: var(--chat-font-family);
+    font-size: var(--chat-font-font-size);
+    background-color: transparent;
+    resize: none;
+    color: white;
+}
+
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+/* Send Button and Media Mode */
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container {
+    position: relative;
+    width: 100px;
+    height: calc(100% - 8px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    z-index: 1;
+    padding: 4px;
+}
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .media-mode {
+    position: relative;
+    width: 100%;
+    height: calc(35%);
+    margin-top: 4px;
+    /*  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    border: 1.5px solid rgba(0, 0, 0, 0.03);
+    background-color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.02);
+}
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .media-mode.active {
+    width: calc(100% - 4px);
+    height: calc(40% - 4px - 4px);
+    border: 2px solid var(--app-blue);
+}
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .send-button {
+    position: relative;
+    width: 100%;
+    height: calc(65%);
+    margin-top: 4px;
+    /*  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    color: white;
+    background: linear-gradient(0deg, var(--app-blue-50), var(--app-green-50));
+    background-color: var(--app-blue-85);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.02);
+}
+
+
+.DunbarColony .send-button .send-icon-container {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    z-index: 0;
+    display: grid;
+    place-items: center;
+    margin-right: 4px;
+    opacity: 0.9;
+}
+
+.DunbarColony .send-button .send-icon-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.DunbarColony .send-button .send-icon-container.image-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .media-mode img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .media-mode img {
+    margin-right: 8px;
+}
+
+.DunbarColony .dunbar-chat-container .send-and-media-mode-container .send-button img {
+    margin-bottom: 4px;
+}

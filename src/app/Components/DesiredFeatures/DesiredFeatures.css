@@ -1,0 +1,159 @@
+.DesiredFeaturesView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100000000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    transition: 0.35s ease-in-out;
+    /*  */
+    display: grid;
+    place-items: center;
+}
+
+.DesiredFeaturesView .close-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.DesiredFeaturesView .disired-features-container {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    /* Padding of elements and padding between top and bottom of viewport */
+    max-height: calc(100% - 60px - 60px);
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.DesiredFeaturesView .disired-features-container .title-description-container {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.DesiredFeaturesView .disired-features-container .title-description-container .main-description {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+.DesiredFeaturesView .disired-features-container .field-items-container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 0;
+    flex-shrink: 0;
+    margin-top: 12px;
+}
+
+.DesiredFeaturesView .disired-features-container .field-items-container .field-title-description {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.DesiredFeaturesView .disired-features-container .field-items-container .field-title-description .request-type {
+    position: relative;
+    width: calc(100%);
+    padding: 4px 12px;
+    height: 38px;
+    border-radius: 8px;
+    border: none;
+    color: var(--app-blue);
+    font-weight: bold;
+    background-color: var(--app-blue-10);
+}
+
+.DesiredFeaturesView .disired-features-container .field-items-container .title {
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 4px;
+}
+
+.DesiredFeaturesView .disired-features-container .field-items-container .description {
+    position: relative;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
+}
+
+.DesiredFeaturesView .disired-features-container .field-items-container .field {
+    position: relative;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 28px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    width: 100%;
+}
+.DesiredFeaturesView .disired-features-container .field-items-container .field.title-field {
+    font-weight: 600;
+}
+.DesiredFeaturesView .disired-features-container .field-items-container .field.request {
+    height: 120px;
+    transition: 0.2s ease-in-out;
+    resize: none;
+}
+.DesiredFeaturesView .disired-features-container .field-items-container .field.reason {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+/* Submit Button */
+/* Submit Button */
+.DesiredFeaturesView .disired-features-container .submit-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 20px;
+    background: linear-gradient(var(--app-blue), var(--app-green-20));
+    background-color: var(--app-blue);
+    border: none;
+    border-radius: 28px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}

@@ -1,0 +1,423 @@
+.newUserView {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 0;
+}
+
+/* Background */
+/* Background */
+/* Background */
+.newUserView .new-user-bckg-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Scrollview */
+/* Scrollview */
+/* Scrollview */
+.newUserView .new-user-main-content-scrollview {
+    position: absolute;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: visible;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Content View */
+/* Content View */
+/* Content View */
+.newUserView .new-user-content-view {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(44px + 44px);
+    padding-bottom: 60px;
+}
+
+
+/* Logo Container */
+/* Logo Container */
+/* Logo Container */
+.newUserView .logo-title-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUserView .logo-title-container .logo-container {
+    position: relative;
+    --newuser-view-logo-height: 34px;
+    width: var(--newuser-view-logo-height);
+    height: var(--newuser-view-logo-height);
+    background-color: transparent;
+    border-radius: 8px;
+    color: black;
+}
+
+.newUserView .logo-title-container .logo-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.newUserView .logo-title-container .logo-container .image-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.newUserView .logo-title-container .auth-app-title {
+    position: relative;
+    font-family: "Cabin Sketch", Arial, Helvetica, sans-serif !important;
+    font-size: 20px;
+    margin-left: 4px;
+    color: var(--app-blue);
+}
+
+/* View Title */
+/* View Titel */
+/* View Title */
+/* View Titel */
+/* View Title */
+.newUserView .view-title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+/* Add New User View */
+/* Add New User View */
+/* Add New User View */
+
+.newUserView .add-basic-user-data-view-and-profile-image {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUserView .add-basic-user-data-view-and-profile-image .proflie-image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2.5px solid black;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 0, 0, 0.25);
+}
+
+.newUserView .add-basic-user-data-view-and-profile-image .proflie-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plusSign {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+}
+.plusSign .hdash { width: 20px; height: 3px; border-radius: 2px; background-color: white; }
+.plusSign .vdash { position: absolute; width: 3px; height: 20px; border-radius: 2px; background-color: white; }
+
+.newUserView .add-basic-user-data-view {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.newUserView .add-basic-user-data-view .field-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.newUserView .add-basic-user-data-view .field-container .text-field-cont {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.newUserView .add-basic-user-data-view .field-container .text-field-cont:first-of-type { margin-left: 0; }
+
+.newUserView .add-basic-user-data-view .field-container .text-field-cont label {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin-top: 12px;
+}
+
+.newUserView .add-basic-user-data-view .field-container .text-field-cont input {
+    position: relative;
+    min-width: 350px;
+    font-weight: 500;
+    color: black;
+    padding: 12px 16px;
+    margin-top: 8px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.newUserView .save-user-data-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--app-blue);
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.newUserView .loading-lottie {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 1060px) {
+    .newUserView .add-basic-user-data-view-and-profile-image {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    .newUserView .view-title {
+        font-size: 20px;
+        top: 24px
+    }
+    
+    .newUserView .add-basic-user-data-view .field-container {
+        flex-direction: column;
+    }
+    
+    .newUserView .add-basic-user-data-view {
+        margin-left: 0;
+    }
+
+    .newUserView .add-basic-user-data-view .field-container .text-field-cont {
+        margin-left: 0;
+    }
+
+    .newUserView .add-basic-user-data-view .field-container .text-field-cont input {
+        min-width: 300px;
+    }
+}
+
+/* Thumb Slider */
+/* Thumb Slider */
+/* Thumb Slider */
+.thumb-slider-view {
+    position: relative;
+    height: 8px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-blue);
+    margin-top: 130px;
+    overflow: visible;
+    border-radius: 4px;
+}
+
+@media (max-width: 1060px) {
+    .thumb-slider-view {
+        width: calc(100% - 70px);
+    }
+}
+
+.thumb-slider-view .thumb-slider-track {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.thumb-slider-view .thumb-slider-option {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: visible;
+}
+
+.thumb-slider-view .thumb-select {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--app-blue);
+    transform: translate(-50%, -35%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.thumb-slider-view .thumb-select.active { border: 4px  solid black;}
+
+.thumb-slider-view .thumb-label-options-container {
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+}
+
+.thumb-slider-view .thumb-label-options-container .thumb-option-item-label {
+    font-size: 14px;
+}
+
+.slider-poles {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-poles .pole-item.right, 
+.slider-poles .pole-item.left {
+    transform: translate(calc(-100% - 30px), -12px);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 4px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.slider-poles .pole-item.right {  transform: translate(calc(100% + 30px), -12px);  }
+
+/* User Interests */
+/* User Interests */
+/* User Interests */
+.newUserView .topics-of-inteterst-scrollview-view {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.newUserView .topics-of-interets-content-view {
+    position: relative;
+    width: calc( 100% - 40px);
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--app-blue-10);
+    border-radius: 12px;
+}
+
+.newUserView .topics-of-interets-content-view .topics-of-interest-title {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.newUserView .topics-of-interets-content-view .topics-of-interest-title.small {
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.65);
+    margin-top: 20px;
+}
+
+.newUserView .topics-of-interets-content-view .topics-of-interest-description {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.topics-of-interest-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.newUserView .topic-item {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    margin-left: 22px;
+    margin-top: 18px;
+}
+.newUserView .topic-item.active { background-color: var(--app-blue); } 
+
+@media (max-width: 850px) {
+    .slider-poles .pole-item.left {
+        transform: translate(calc(-20px), -50px);
+    }
+
+    .slider-poles .pole-item.right {
+        transform: translate(calc(20px), -50px);
+    }
+}

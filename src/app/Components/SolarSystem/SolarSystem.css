@@ -1,0 +1,32 @@
+/* body {
+    position: relative;
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+} */
+#solar-system {
+    width: 100vw;
+    height: 100vh;
+}
+.orbit {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.05);
+}
+.planet {
+    fill: #2093ff;
+}
+.dwarf-planet {
+    fill: #cc6633;
+}
+.asteroid, .kuiper-object {
+    fill: gray;
+}
+.label {
+    font-size: 8px;
+    fill: black;
+}
+.region-label {
+    font-size: 12px;
+    fill: #1cda3c;
+}

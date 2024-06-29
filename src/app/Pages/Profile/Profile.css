@@ -1,0 +1,717 @@
+.Profile-View {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: calc(100% - var(--side-menu-width));
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.Profile-View .profile-view-content-container {
+    position: relative;
+    width: calc(100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.profile-view-right-side {
+    position: relative;
+    width: 18%;
+    height: calc( 100% );
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 8px;
+    border-radius: 8px;
+}
+
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+/* Top View */
+.Profile-View .top-view-container {
+    position: relative;
+    width: calc(100% - 30px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+/* Profile Image & User Profile & Container Follow */
+.Profile-View .top-view-container .profile-image-user-profile-container-follow {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Profile Image */
+/* Profile Image */
+/* Profile Image */
+/* Profile Image */
+/* Profile Image */
+/* Profile Image */
+/* Profile Image */
+.Profile-View .top-view-container .profile-landing-image {
+    position: relative;
+    width: calc(100% + 22px);
+    height: 250px;
+    top: -12px;
+    left: -12px;
+    background-color: gray;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.Profile-View .top-view-container .profile-landing-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backdrop-filter: blur(10px);
+}
+
+.Profile-View .top-view-container .profile-image-container {
+    position: relative;
+    height: 0;
+    width: fit-content;
+    margin-left: 20px;
+    overflow: visible;
+}
+
+.Profile-View .top-view-container .profile-image-container .profile-image {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    overflow: hidden;
+    background-color: lightgray;
+    transform: translateY(-120px);
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+/* Folow */
+/* Folow */
+/* Folow */
+/* Folow */
+/* Folow */
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons.edit-container  button{
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black;
+    font-weight: 500 !important;
+    border-radius: 20px !important;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons.edit-container  button label {
+    display: inline-block;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons.edit-container  button label .material-symbols-outlined {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons  button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons.follow-container  button {
+    background-color: var(--app-blue);
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .profile-action-buttons.edit-container  button {
+    background: linear-gradient(90deg, transparent, var(--app-blue-5));
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 8px;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .username-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.Profile-View .top-view-container .profile-image-user-profile-container-follow .username-container .nickname {
+    font-weight: 400;
+    color: var(--app-blue-85);
+    font-size: 16px;
+}
+
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+/* Bottom View */
+.Profile-View .bottom-view-container {
+    position: relative;
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+/* Bio */
+/* Bio */
+/* Bio */
+/* Bio */
+/* Bio */
+.Profile-View .top-view-container .bio-container {
+    position: relative;
+    width: calc(100% - 60px);
+    height: fit-content;
+    padding: 30px;
+}
+
+.Profile-View .top-view-container .bio-container .bio {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+}
+
+/* Community Items */
+/* Community Items */
+/* Community Items */
+/* Community Items */
+.Profile-View .community-options {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    background-color: rgba(0, 0, 0, 0.09);
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.Profile-View .community-options-title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.Profile-View .community-options .community-options-contentview {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.Profile-View .community-options .community-options-contentview  .community-item-option {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 12px;
+}
+
+.Profile-View .community-options .community-options-contentview  .community-item-option:first-of-type { margin-left: 0; }
+
+/* Selectable Items */
+/* Selectable Items */
+/* Selectable Items */
+/* Selectable Items */
+/* Selectable Items */
+/* Selectable Items */
+/* Selectable Items */
+.Profile-View .top-view-container .bottom-view-selection-items {
+    position: relative;
+    height: 34px;
+    width: calc(100% - 30px);
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 12px;
+    /*  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.bottom-view-container .profile-no-items {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Profile-View .top-view-container .bottom-view-selection-items .content-select-items {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.Profile-View .top-view-container .bottom-view-selection-items .content-select-items.active {
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    background: linear-gradient(90deg, var(--app-blue-70), var(--app-green-50) );
+    background-color: var(--app-blue);
+    color: white;
+}
+
+.Profile-View .top-view-container .bottom-view-selection-items {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*  */
+/*  */
+/*  */
+
+.Profile-View .top-view-container .follow-and-edit-button-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.Profile-View .top-view-container .follower-following-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+.Profile-View .top-view-container .follower-container,
+.Profile-View .top-view-container .following-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-View .top-view-container .follower-container .title,
+.Profile-View .top-view-container .following-container .title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.Profile-View .top-view-container .follower-container {
+    margin-left: 30px;
+}
+
+/* Professional */
+.Profile-View .professional-and-project-history-container-scrollview {
+    position: relative;
+    display: flex;
+    height: 250px;
+    width: calc(100% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient( 90deg, var(--app-blue-5), var(--app-green-5)) ;
+    background-color: var(--app-blue-5);
+    border-radius: 22px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.Profile-View .professional-and-project-history-container-scrollview .professional-and-project-history-container-content-view {
+    position: relative;
+    width: auto;
+    height: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item {
+    position: relative;
+    width: fit-content;
+    max-width: 350px;
+    height: calc(100% - 24px);
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 0 8px 3px rgb(0, 0, 0, 0.05);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item:first-of-type { margin: 0; }
+
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item .project-name {
+    font-size: 18px;
+    color: black;
+    font-weight: 600px;
+    margin-top: auto;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item .eighty-characters {
+    font-size: 12px;
+    color: lightgray;
+    font-weight: 500px;
+    margin-top: auto;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item .summary {
+    font-size: 12px;
+    color: gray;
+    font-weight: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item .state {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500px;
+    margin-top: 20px;
+    color: var(--app-green);
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.Profile-View .professional-and-project-history-container-content-view .project-and-experience-item .link-refs {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--app-blue);
+    margin-top: 20px;
+}
+
+.p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Profile-View .bottom-view-container .content-scrollview-content-view {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 40px;
+} */
+
+
+
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+/* Right Side */
+.Profile-View .project-progress {
+    position: relative;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 0 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.profile-project-progress-content-view {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    --incomplete-gray: gray;
+}
+
+.Profile-View .project-progress-title-container {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 12px;
+}
+
+.Profile-View .project-progress-title-container h3 {
+    color: white;
+}
+
+
+.Profile-View .project-progress .project-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Profile-View .project-progress .project-details .project-name {
+    font-size: 18px;
+    color: white;
+    font-weight: 600px;
+    margin-top: auto;
+}
+
+.Profile-View .project-progress .project-details .eighty-characters {
+    font-size: 12px;
+    color: lightgray;
+    font-weight: 500px;
+    margin-top: auto;
+    margin-top: 8px;
+}
+
+.Profile-View .project-progress .project-details .description {
+    font-size: 12px;
+    color: gray;
+    font-weight: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 6px;
+}
+
+
+
+/* Progress UI */
+.project-progress-ui {
+    position: relative;
+    width: calc(100% - 40px);
+    height: fit-content;
+    padding: 30px 20px;
+    color: white;
+    /* background-color: red; */
+    display: grid;
+    place-items: center;
+    z-index: 0;
+}
+
+/*  */
+.project-progress-ui .project-progress-bar {
+    position: absolute;
+    width: 8px;
+    height: calc(100%);
+    background-color: var(--incomplete-gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.project-progress-ui .project-progress-bar .progress {
+    position: relative;
+    width: 100%;
+    background-color: var(--app-blue);
+}
+
+.project-progress-ui .project-progress-check-points {}
+
+.project-progress-ui .project-progress-check-points .check-point-items {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-progress-ui .project-progress-check-points .check-point-ui {
+    position: relative;
+    height: 25px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--incomplete-gray);
+    border-radius: 50%;
+}
+
+.project-progress-ui .project-progress-check-points .check-point-ui.complete {
+    background-color: var(--app-blue);
+    border: 1px solid white;
+}
+
+.check-point-ui-text {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

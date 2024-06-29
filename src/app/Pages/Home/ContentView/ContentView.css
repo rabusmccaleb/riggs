@@ -1,0 +1,602 @@
+
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+/* Content Card */
+.content-items {
+    position: relative;
+    height: fit-content;
+    width: calc(100% - 36px - 40px + 13px);
+    width: calc(100% - 36px - 24px);
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-left: 12px;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid rgb(232, 232, 232);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.content-items.horizontal {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 20px;
+}
+
+.content-items:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.content-items .postedby-speech-and-more-button {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-items .content-post-by-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.content-items .content-post-by-container:hover { background-color: rgba(0, 0, 0, 0.15); }
+.content-items .content-post {
+    max-height: 412px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+}
+/* User Profile Image And Post By */
+/* User Profile Image And Post By */
+/* User Profile Image And Post By */
+.content-items .content-post-by-container .userProfile-img-content-container {
+    position: relative;
+    width: 31px;
+    height: 31px;
+    background-color: gray;
+    border-radius: 17px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.profile-name-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-items .content-post-by-container .userProfile-name {
+    font-size: 13px;
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.content-items .content-post-by-container .userProfile-nick-name {
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+    color: var(--app-blue);
+}
+
+/* Date Of Post Text */
+/* Date Of Post Text */
+/* Date Of Post Text */
+.date-of-post-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    color: gray;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+/* Text To Speech Button */
+/* Text To Speech Button */
+/* Text To Speech Button */
+.content-items .speak-content-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 12px;
+    border-radius: 8px;
+    /* background-color: rgb(190, 190, 190); */
+    background-color: rgb(0, 0, 0, 0.05);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-items .speak-content-button:hover { 
+    background-color: rgb(0, 0, 0, 0.099);
+    transform: scale(1.15);
+}
+
+.content-items .speak-content-button .speak-content-label {
+    position: relative;
+    font-weight: 500;
+    font-size: 11px;
+    color: black;
+}
+
+
+/* Add to favorites */
+/* Add to favorites */
+/* Add to favorites */
+.content-items .favorites-button-container {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    margin-left: 8px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    opacity: 0.8;
+}
+
+.content-items .favorites-button-container:hover { 
+    transform: scale(1.5);
+}
+
+.content-items .favorites-button-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content-items .v-stack-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-items .v-stack-item .content-title {
+    position: relative;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.content-items .v-stack-item .content-title { font-size: 20px; }
+
+.content-items .v-stack-item .content-post {
+    position: relative;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(40, 40, 40);
+}
+.content-items .v-stack-item .content-post { font-size: 16.5px;}
+
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+.content-items .like-and-emoji-responses-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    overflow: visible;
+    overflow-y: visible;
+    background-color: transparent;
+    background: linear-gradient(-90deg, transparent, rgb(225, 225, 225, 0.09), transparent);
+    z-index: 1000000000;
+}
+
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    overflow-y: visible;
+}
+
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    background-color: var(--app-blue-10);
+    margin-left: 24px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options:hover { 
+    background-color: var(--app-blue-20);
+    transform: scale(1.75);
+}
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options:first-of-type { margin-left: 0;}
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options.active { 
+    background-color: var(--app-blue-70) !important;
+}
+
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options.metrics {
+    background-color: rgb(0, 0, 0, 0.005);
+    border-radius: 4px;
+}
+
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options.metrics .material-symbols-outlined {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300 !important;
+    color: rgb(0, 0, 0, 0.85);
+}
+.content-items .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options.metrics:hover {
+    transform: none;
+}
+
+/* Comments */
+/* Comments */
+/* Comments */
+.content-items .comments-controlls-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 0;
+    border-radius: 12px;
+    margin-top: 4px;
+}
+
+.content-items .comment-send-button-container {
+    position: relative;
+    height: fit-content;
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 12px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.content-items .comment-send-button-container {
+    grid-template-columns: 1fr auto;
+    gap: 4px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+}
+
+
+.comment-send-button-container .comment-area {
+    position: relative;
+    border-radius: 8px;
+    padding: 8px 12px;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.comment-send-button-container .comment-area-send-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*  */
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    /*  */
+    background-color: var(--app-blue);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.see-comments-button {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    padding: 8px 0;
+    margin-top: 8px;
+    border-radius: 4px;
+    /*  */
+    font-size: 13px;
+    font-weight: bold;
+    /*  */
+    transition: 0.3s;
+    -webkit-transition: 0.3s
+}
+.see-comments-button:hover { background-color: rgba(0, 0, 0, 0.05); }
+
+.see-comments-button .eye-icon-container {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    z-index: 0;
+    display: grid;
+    place-items: center;
+    margin-top: 1px;
+    margin-right: 4px;
+    opacity: 0.7;
+}
+
+.see-comments-button .eye-icon-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.see-comments-button .eye-icon-container .image-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+.content-items .movie-player {
+    position: relative;
+    height: fit-content;
+    /* width: fit-content; */
+    /* max-width: 100%; */
+    width: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+    /*  */
+    overflow: hidden;
+    margin-top: 12px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.content-items mux-player {
+    /* height: 500px; */
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.content-items .movie-player .mux-player {
+    height: fit-content !important;
+}
+
+.content-items .movie-player video {
+    height: 100%;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+/* Video Thumbnail */
+/* Video Thumbnail */
+/* Video Thumbnail */
+/* Video Thumbnail */
+.content-items .MoviePlayerThumbnailView {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 12px;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 0;
+    border: 2px solid black;
+}
+
+.content-items .MoviePlayerThumbnailView .thumbnail {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.8;
+    object-position: center;
+    z-index: 0;
+}
+
+.content-items .MoviePlayerThumbnailView .thumbnail-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* background-color: red; */
+}
+
+/* Video Player Controller */
+/* Video Player Controller */
+/* Video Player Controller */
+.content-items .movie-player .movie-player-controller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: all;
+}
+
+/* Short Form Video Player Styles */
+
+
+
+/* More Button */
+/* More Button */
+/* More Button */
+/* More Button */
+/* More Button */
+/* More Button */
+/* More Button */
+.more-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.01);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    margin-left: 8px;
+}
+.more-button:hover {  background-color: rgb(0, 0, 0, 0.15); }
+.content-view.mobile .date-of-post-container { margin-left: auto; }
+
+.more-button .dot {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: black;
+    margin-left: 2px;
+}
+.more-button .dot:first-of-type { margin: 0;}
+
+.more-button-pop-up {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    display: grid;
+}
+
+.more-button .more-button-comtent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: translateX(-100%);
+    z-index: 100000;
+    box-shadow: 0 2px 12px 4px rgb(0, 0, 0, 0.15);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    backdrop-filter: blur(1px);
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-rows: repeat(1fr);
+}
+
+.more-button .more-button-comtent .options {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 0.25px solid rgb(0, 0, 0, 0.05);
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 500;
+    text-shadow: 0 0.5px rgb(0, 0, 0, 0.07);
+    padding: 12px 20px;
+    text-align: left;
+}
+.more-button .more-button-comtent .options:hover { background-color: rgb(0, 0, 0, 0.05);}
+.more-button .more-button-comtent .options:last-of-type { border: none;}
+.more-button .more-button-comtent .options.red { color: var(--app-red);}
+
+.more-button .focus-view {
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.more-button .focus-view .control-focus-view {
+    position: relative;
+    width: 1000000000vw;
+    height: 1000000000000vh;
+    background-color: transparent;
+}

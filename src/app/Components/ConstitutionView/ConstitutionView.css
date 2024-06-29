@@ -1,0 +1,82 @@
+.ConstitutionView {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1000000;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.ConstitutionView .Constitution-View {
+    position: absolute;
+    width: 50vw;
+    height: calc(100vh - 140px);
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 14px 7px var(--app-blue-15);
+    /* box-shadow: 0 0 14px 7px rgba(0, 0, 0, 0.2); */
+    z-index: 5000000000000000000;
+    transition: 1s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .ConstitutionView.mobile .Constitution-View {
+        width: calc(100% - 40px);
+        height: calc(100vh - 40px);
+        padding: 20px;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: none;
+    }
+}
+
+.ConstitutionView .close-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.ConstitutionView .close-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.ConstitutionView .close-button button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    font-weight: 600;
+}
+
+.ConstitutionView .constitution-content-view {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.ConstitutionView .constitution-content-view ul li {
+    margin-top: 12px;
+}

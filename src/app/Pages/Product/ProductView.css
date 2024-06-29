@@ -1,0 +1,254 @@
+.product-with-color-ui {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: white;
+    --side-menu-width: calc(14vw + 8px);
+    --other-options-content-width: calc(14.5vw + 8px);
+    --content-view-width: calc(100% - var(--side-menu-width) - var(--other-options-content-width));
+}
+
+.product-with-color-ui .colors-ui-container { opacity: 0.15 !important;}
+
+.hideScrollIndicator {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+  
+.hideScrollIndicator::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.img-container {
+    z-index: 0;
+    overflow: hidden;
+}
+
+.img-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.product-with-color-ui .product-background-ui {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.colors-ui-container {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.product-with-color-ui .product-background-ui .product-bckg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.product-with-color-ui .product-background-ui .product-bckg-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+/* Content View */
+.product .content-view {
+    position: relative;
+    width: 100%;
+    height: calc(100% - var(--header-height) + 30px);
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.117);
+}
+
+.product .content-view.mobile { height: 100%; }
+
+/* *********** Side Menu */
+.product .content-view .side-menu {
+    position: relative;
+    height: calc(100%);
+    width: var(--side-menu-width);
+    
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 255, 255, 0.95); */
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.5));
+    background-color: white;
+}
+
+/* Content */
+.product .content-view .content {
+    position: relative;
+    height: 100%;
+    width: var(--content-view-width);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+}
+
+.product .content-view.mobile .content { width: 100vw; }
+
+.product .content-view .content .content-bckg-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    z-index: 0;
+    filter: blur(1.5px);
+}
+
+.product .content-view .content .content-bckg-view span {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.05;
+}
+
+/* Community Items */
+.product .content-view .content .community-options {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+    overflow: hidden;
+    overflow-x: scroll;
+    background-color: white;
+    padding: 4px 0;
+}
+
+.product .content-view.mobile .content .community-options {
+    border-radius: 0px;
+    background-color: black; 
+    box-shadow: 0 0 4px 1px rgb(0, 0, 0, 0.1);
+}
+
+.community-options-filter-button-container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: fit-content;
+    margin-right: 0px;
+    transition: 0.35s;
+    -webkit-transition: 0.35s;
+}
+
+.product .content-view .content .community-options .community-options-contentview {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.product .content-view .content .community-options .community-options-contentview  .community-item-option {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: white;
+    margin-left: 4px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.product .content-view .content .community-options .community-options-contentview  .community-item-option.active {
+    background: linear-gradient(90deg, var(--app-green-10), var(--app-green-10));
+    background-color: dodgerblue;
+}
+
+.product .content-view .content .community-options .community-options-contentview  .community-item-option:last-of-type {
+    margin-left: 40px;
+}
+
+.product .content-view.mobile .content .community-options .community-options-contentview .community-item-option { border: 0.75px solid rgba(255, 255, 255, 0.35); }
+
+.product .content-view.mobile .content .community-options .community-options-contentview { 
+    padding-right: 150px;
+}
+
+.product .content-view .content .community-options .community-options-contentview .community-item-option .community-img-item-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: lightgray;
+    margin-left: 2px;
+}
+
+.product .content-view .content .community-options .community-options-contentview .community-item-option .community-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.product .content-view .content .content-scrollview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.product .content-view .content .content-scrollview .content-scrollview-content-view {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+

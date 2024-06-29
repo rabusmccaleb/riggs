@@ -1,0 +1,24 @@
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+/* colors-ui colors-ui colors-ui */
+.colors-ui-container {
+    position: relative;
+    z-index: 0;
+    filter: blur(50px);
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.top-component {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}

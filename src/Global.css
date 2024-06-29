@@ -1,0 +1,190 @@
+html {
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+body { 
+  background-color: black;
+}
+
+#root { 
+  border-radius: 20px;
+}
+
+html, body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*  */
+    --header-height: 50px;
+    --app-blue: #2093ff;
+    --app-yellow: #ffcf20;
+    --app-red: #fc4421;
+    --app-green: #1cda3c;
+
+    /* Blue */
+    --app-blue-5: rgba(32, 147, 255, 0.05);
+    --app-blue-10: rgba(32, 147, 255, 0.1);
+    --app-blue-15: rgba(32, 147, 255, 0.15);
+    --app-blue-20: rgba(32, 147, 255, 0.2);
+    --app-blue-25: rgba(32, 147, 255, 0.25);
+    --app-blue-30: rgba(32, 147, 255, 0.3);
+    --app-blue-35: rgba(32, 147, 255, 0.35);
+    --app-blue-40: rgba(32, 147, 255, 0.4);
+    --app-blue-45: rgba(32, 147, 255, 0.45);
+    --app-blue-50: rgba(32, 147, 255, 0.5);
+    --app-blue-55: rgba(32, 147, 255, 0.55);
+    --app-blue-60: rgba(32, 147, 255, 0.6);
+    --app-blue-65: rgba(32, 147, 255, 0.65);
+    --app-blue-70: rgba(32, 147, 255, 0.7);
+    --app-blue-75: rgba(32, 147, 255, 0.75);
+    --app-blue-80: rgba(32, 147, 255, 0.8);
+    --app-blue-85: rgba(32, 147, 255, 0.85);
+    --app-blue-90: rgba(32, 147, 255, 0.9);
+    --app-blue-95: rgba(32, 147, 255, 0.95);
+    --app-blue-100: rgba(32, 147, 255);
+
+
+    /* Red */
+    --app-red-5: rgba(252, 68, 33, 0.05);
+    --app-red-10: rgba(252, 68, 33, 0.1);
+    --app-red-15: rgba(252, 68, 33, 0.15);
+    --app-red-20: rgba(252, 68, 33, 0.2);
+    --app-red-25: rgba(252, 68, 33, 0.25);
+    --app-red-30: rgba(252, 68, 33, 0.3);
+    --app-red-35: rgba(252, 68, 33, 0.35);
+    --app-red-40: rgba(252, 68, 33, 0.4);
+    --app-red-45: rgba(252, 68, 33, 0.45);
+    --app-red-50: rgba(252, 68, 33, 0.5);
+    --app-red-55: rgba(252, 68, 33, 0.55);
+    --app-red-60: rgba(252, 68, 33, 0.6);
+    --app-red-65: rgba(252, 68, 33, 0.65);
+    --app-red-70: rgba(252, 68, 33, 0.7);
+    --app-red-75: rgba(252, 68, 33, 0.75);
+    --app-red-80: rgba(252, 68, 33, 0.8);
+    --app-red-85: rgba(252, 68, 33, 0.85);
+    --app-red-90: rgba(252, 68, 33, 0.9);
+    --app-red-95: rgba(252, 68, 33, 0.95);
+    --app-red-100: rgb(252, 68, 33);
+
+    
+    /* yellow */
+    --app-yellow-5: rgba(255, 207, 32, 0.05);
+    --app-yellow-10: rgba(255, 207, 32, 0.1);
+    --app-yellow-15: rgba(255, 207, 32, 0.15);
+    --app-yellow-20: rgba(255, 207, 32, 0.2);
+    --app-yellow-25: rgba(255, 207, 32, 0.25);
+    --app-yellow-30: rgba(255, 207, 32, 0.3);
+    --app-yellow-35: rgba(255, 207, 32, 0.35);
+    --app-yellow-40: rgba(255, 207, 32, 0.4);
+    --app-yellow-45: rgba(255, 207, 32, 0.45);
+    --app-yellow-50: rgba(255, 207, 32, 0.5);
+    --app-yellow-55: rgba(255, 207, 32, 0.55);
+    --app-yellow-60: rgba(255, 207, 32, 0.6);
+    --app-yellow-65: rgba(255, 207, 32, 0.65);
+    --app-yellow-70: rgba(255, 207, 32, 0.7);
+    --app-yellow-75: rgba(255, 207, 32, 0.75);
+    --app-yellow-80: rgba(255, 207, 32, 0.8);
+    --app-yellow-85: rgba(255, 207, 32, 0.85);
+    --app-yellow-90: rgba(255, 207, 32, 0.9);
+    --app-yellow-95: rgba(255, 207, 32, 0.95);
+    --app-yellow-100: rgb(255, 207, 32);
+
+
+      /* green */
+      --app-green-5: rgba(28, 218, 60, 0.05);
+      --app-green-10: rgba(28, 218, 60, 0.1);
+      --app-green-15: rgba(28, 218, 60, 0.15);
+      --app-green-20: rgba(28, 218, 60, 0.2);
+      --app-green-25: rgba(28, 218, 60, 0.25);
+      --app-green-30: rgba(28, 218, 60, 0.3);
+      --app-green-35: rgba(28, 218, 60, 0.35);
+      --app-green-40: rgba(28, 218, 60, 0.4);
+      --app-green-45: rgba(28, 218, 60, 0.45);
+      --app-green-50: rgba(28, 218, 60, 0.5);
+      --app-green-55: rgba(28, 218, 60, 0.55);
+      --app-green-60: rgba(28, 218, 60, 0.6);
+      --app-green-65: rgba(28, 218, 60, 0.65);
+      --app-green-70: rgba(28, 218, 60, 0.7);
+      --app-green-75: rgba(28, 218, 60, 0.75);
+      --app-green-80: rgba(28, 218, 60, 0.8);
+      --app-green-85: rgba(28, 218, 60, 0.85);
+      --app-green-90: rgba(28, 218, 60, 0.9);
+      --app-green-95: rgba(28, 218, 60, 0.95);
+      --app-regreend-100: rgb(28, 218, 60);
+
+  }
+  
+  /* Removing Link Styles */
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
+  
+  
+  h1, h2, h3, h4, h5, h6, p, label, a, span, textarea, input, span {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto'; */
+    font-family: "Helvetica", "Arial" !important;
+  }
+  
+  span.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+  }
+
+  .content-view.mobile h1, 
+  .content-view.mobile h2, 
+  .content-view.mobile h3, 
+  .content-view.mobile h4,
+  .content-view.mobile h5,
+  .content-view.mobile h6,
+  .content-view.mobile p,
+  .content-view.mobile label,
+  .content-view.mobile a,
+  .content-view.mobile span,
+  .content-view.mobile div,
+  .content-view.mobile img {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+.mobileApp h1, 
+.mobileApp h2, 
+.mobileApp h3, 
+.mobileApp h4,
+.mobileApp h5,
+.mobileApp h6,
+.mobileApp p,
+.mobileApp label,
+.mobileApp a,
+.mobileApp span,
+.mobileApp div,
+.mobileApp img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+  /* hide scrollbar but allow scrolling */
+  .hideScrollIndicator {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  .hideScrollIndicator::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }

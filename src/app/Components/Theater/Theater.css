@@ -1,0 +1,668 @@
+.TheaterView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    overflow-y: scroll;
+    /*  */
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.theater-vStack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    --theater-header-height: 60px;
+}
+
+
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+/* Theater Header - Theater Header  - Theater Header  - Theater Header  - Theater Header */
+.theater-vStack .close-title-descrip-more-container {
+    position: relative;
+    width: calc(100% - 60px);
+    height: var(--theater-header-height);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    padding: 0 30px;
+    /* Temp. */
+    /* background-color: black; */
+}
+
+
+.theater-vStack .close-title-descrip-more-container .close-button {
+    height: 36px;
+    width: 36px;
+    background: linear-gradient(var(--app-blue-25), var(--app-blue-5));
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.theater-vStack .close-title-descrip-more-container .close-button:hover { transform: scale(1.1);}
+
+.theater-vStack .close-title-descrip-more-container .view-title .app-name,
+.theater-vStack .close-title-descrip-more-container .view-title {
+    position: relative;
+    width: fit-content;
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.theater-vStack .close-title-descrip-more-container .app-name {
+    color: white;
+    margin-left: 20px;
+    margin-right: 4px;
+    /* font-family: 'Cabin Sketch', sans-serif !important; */
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.theater-vStack .close-title-descrip-more-container  .theater-mode-name {
+     font-family: 'Cabin Sketch', sans-serif !important;
+     font-size: 14px;
+     color: white;
+}
+
+.theater-vStack .close-title-descrip-more-container .description-container {
+    position: relative;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    text-align: left;
+    margin-left: auto;
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button {
+    background: linear-gradient(var(--app-blue-25), var(--app-blue-5));
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button .dot {
+    background-color: white;
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button .more-button-comtent {
+    background: linear-gradient(var(--app-blue-25), var(--app-blue-5));
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button .more-button-comtent .options {
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px rgba(0 , 0, 0, 0.1);
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button .more-button-comtent .options.red {
+    color: var(--app-red);
+}
+
+.theater-vStack .close-title-descrip-more-container .more-button .more-button-comtent .options:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+/* Contentview Contentview Contentview Contentview Contentview Contentview  */
+.TheaterView .theater-contentview {
+    position: relative;
+    width: calc(100% - 60px);
+    height: calc(100% - 24px - var(--theater-header-height));
+    padding: 12px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    /*  */
+    --content-container-width: 64%;
+    --comment-container-width: 36%;
+}
+
+.TheaterView .theater-contentview .content-container {
+    position: relative;
+    padding: 0 12px 30px 12px;
+    width: calc(var(--content-container-width) - 24px);
+    height: fit-content;
+    min-height: calc(100% - 30px);
+    background: linear-gradient(90deg, var(--app-blue-5), rgba(255, 255, 255, 0.05));
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(1px);
+    /*  */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.TheaterView .theater-contentview .content-container .content-title {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.TheaterView .theater-contentview .content-container .content-text-content {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 12px;
+}
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+/* Movie Player Movie Player Movie Player */
+.TheaterView .movie-player {
+    position: relative;
+    height: fit-content;
+    max-height: 100%;
+    width: calc(100% + 24px);
+    margin-left: -12px;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+    /*  */
+    overflow: hidden;
+    margin-top: 0;
+    border-radius: 0px;
+    background-color: black;
+}
+
+.TheaterView mux-player {
+    /* height: 500px; */
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.TheaterView .movie-player .mux-player {
+    height: fit-content !important;
+}
+
+.TheaterView .movie-player video {
+    height: 100%;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+/* Emoji Responses */
+.TheaterView .theater-contentview .like-and-emoji-responses-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    /* place-items: center; */
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    overflow: visible;
+    overflow-y: visible;
+    background-color: transparent;
+    background: none;
+    z-index: 1000000000;
+    opacity: 0.7;
+    filter: blur(0.5px);
+}
+
+.TheaterView .theater-contentview .like-and-emoji-responses-container .like-and-emoji-responses-hstack {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    overflow-y: visible;
+}
+
+.TheaterView .theater-contentview .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 24px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    mix-blend-mode: difference;
+}
+.TheaterView .theater-contentview .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options:hover { 
+    background-color: var(--app-blue-20);
+    transform: scale(1.25);
+}
+.TheaterView .theater-contentview .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options:first-of-type { margin-left: 0;}
+.TheaterView .theater-contentview .like-and-emoji-responses-container .like-and-emoji-responses-hstack .emoji-response-options.active { 
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+/* Comments Comments Comments Comments Comments Comments Comments Comments */
+.TheaterView .theater-contentview .theater-comments-container {
+    position: relative;
+    width: calc( var(--comment-container-width) - 10px );
+    padding: 0 0 0 20px;
+    height: fit-content;
+}
+
+.TheaterView .theater-contentview .theater-comments-container .comment-section-container {
+    position: relative;
+    width: calc(100%);
+    padding: 0;
+    height: fit-content;
+    margin-left: auto;
+    transition: 0.35s;
+    -webkit-transition: 0.35s;
+}
+
+.TheaterView .theater-contentview .comment-section-content {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 0;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.TheaterView .theater-contentview .theater-comments-container .comment-section-title {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;
+}
+
+.TheaterView .theater-contentview .theater-comments-container .comment-container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    background-color: transparent;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item {
+    position: relative;
+    width: calc(100% - 16px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.07), rgba(255,255,255,0.05)) ;
+    background-color: rgba(0 , 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 12px 8px;
+    border-radius: 8px;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item  .comment-text {
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin-top: 8px;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item .comment-user-info-and-date {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item .comment-user-info-and-date .time-of-post {
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item .comment-user-info-and-date .comment-user-profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.theater-comments-container .comment-section-content .comment-list-container .comment-item .comment-user-profile-info .first-last-username {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+    color: white;
+}
+
+.theater-comments-container .comment-section-content .comment-item .comment-user-profile-info .first-last-username .first-last {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.theater-comments-container .comment-section-content .comment-item .comment-user-profile-info .first-last-username .username {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--app-blue);
+}
+
+.theater-comments-container .comment-section-content .comment-item .comment-user-profile-info .comment-user-profile-image-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: gray;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+}
+
+.theater-comments-container .comment-section-content .comment-item .comment-user-profile-info .comment-user-profile-image-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theater-comments-container .comment-section-content .comment-item .comment-user-profile-info .comment-user-profile-image-container .image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.theater-comments-container .comment-section-content .comment-item .reply-top-comment-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+}
+
+.theater-comments-container .comment-section-content .comment-item .reply-top-comment-container .reply-textarea {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid rgba(0,0,0,0.05);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: black;
+    padding: 4px;
+    border-radius: 6px;
+    resize: none;
+    font-size: 14px;
+    margin-top: 4px;
+    color: white !important;
+}
+
+.theater-comments-container .comment-section-content .comment-item .reply-top-comment-container .reply-textarea  .reply-button-containers {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.theater-comments-container .comment-section-container .comment-item .reply-top-comment-container .reply-to-comment-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 8px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    margin-top: 4px;
+}
+
+.theater-comments-container .comment-section-container .comment-item .reply-top-comment-container .reply-to-comment-button.active {
+    background-color: var(--app-blue-80) !important;
+}
+
+.theater-comments-container .comment-section-container .comment-item .reply-top-comment-container .cancel-reply {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--app-red-10);
+    color: var(--app-red);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.theater-comments-container .comment-section-content .comment-item .show-replies-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border: 30px;
+    padding: 4px 6px;
+    background-color: var(--app-blue-10);
+    color: var(--app-blue);
+}
+
+.theater-comments-container .replies-container {
+    position: relative;
+    width: calc(100% - 30px - 16px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+
+.theater-comments-container .comment-container-nested {
+    margin-top: 8px;
+}
+
+
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+/* Comments */
+.TheaterView .theater-contentview .theater-comments-container .comments-controlls-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 225, 225, 0.2);
+    padding: 4px 0;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.TheaterView .theater-contentview .theater-comments-container .comment-send-button-container {
+    position: relative;
+    height: fit-content;
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 12px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.TheaterView .theater-contentview .theater-comments-container .comment-send-button-container {
+    grid-template-columns: 1fr auto;
+    gap: 4px;
+    width: calc(100%);
+    margin-left: 8px;
+}
+
+
+.TheaterView .theater-contentview .theater-comments-container .comment-send-button-container .comment-area {
+    position: relative;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: white;
+    resize: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.TheaterView .theater-contentview .theater-comments-container .comment-send-button-container .comment-area-send-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*  */
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    /*  */
+    background-color: var(--app-blue);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+}

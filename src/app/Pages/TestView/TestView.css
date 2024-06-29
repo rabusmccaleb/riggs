@@ -1,0 +1,605 @@
+.test-view {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255);
+    color: white;
+}
+
+.test-view .background-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+.test-view .background-container .colors-ui-container { filter: blur(110px); }
+
+.test-view .test-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 50px 50px;
+    display: grid;
+    place-items: center;
+}
+
+.test-view .test-view-container .test-content-container {
+    position: relative;
+    width: fit-content;
+    max-width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-view .test-content-container .test-view-v-stack {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .question-title-container {
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Images To Questions */
+/* Images To Questions */
+.test-view .test-content-container .test-view-v-stack .question-item .image-items-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .image-items-container .image-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .image-items-container .image-item .image {
+    position: relative;
+    width: 300px;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,1);
+    object-fit: contain;
+}
+.test-view .test-content-container .test-view-v-stack .question-item .image-items-container .image-item .image:first-of-type { margin: 0;}
+
+.test-view .test-content-container .test-view-v-stack .question-item .image-items-container .image-item .image-label {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+/* Answer Setup */
+/* Answer Setup */
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options-container {
+    margin-top: 20px;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options-container .answer-options {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options-container .answer-options:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options .option-selection {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    margin-right: 12px;
+}
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options.active .option-selection {
+    background-color: var(--app-blue);
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options .answer-title {
+    position: relative;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 12px;
+}
+
+.test-view .test-content-container .test-view-v-stack .question-item .answer-options .answer-answer {
+    font-weight: 600;
+    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+/* Timer View */
+/* Timer View */
+.test-view .test-view-container .timerView {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10000000;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.test-view .test-view-container .timerView .timer-view-title {
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.test-view .test-view-container .timerView .time-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 20px;
+    background-color: var(--app-blue-20);
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.test-view .test-view-container .timerView .time-container label {
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Title Logo Exam View */
+/* Title Logo Exam View */
+.CompletedView .title-logo-container,
+.test-view .title-logo-container {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompletedView .title-logo-container .logo-container,
+.test-view .title-logo-container .logo-container {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: rgb(0, 0, 0, 0.0);
+    z-index: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+.CompletedView .title-logo-container .logo-container img,
+.test-view .title-logo-container .logo-container img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.CompletedView .title-logo-container .logo-container .image-cover,
+.test-view .title-logo-container .logo-container .image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.CompletedView .title-logo-container .exam-app-title,
+.test-view .title-logo-container .exam-app-title {
+    position: relative;
+    font-family: "Cabin Sketch", Arial, Helvetica, sans-serif !important;
+    color: var(--app-blue) !important;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 12px;
+}
+
+.CompletedView .title-logo-container .exam-view-title,
+.test-view .title-logo-container .exam-view-title {
+    position: relative;
+    font-size: 14px;
+    color: black !important;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+/* Navigation Items */
+/* Navigation Items */
+.test-view .navigation-buttons-style {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    right: 30px;
+    bottom: 30px;
+}
+
+.test-view .navigation-buttons-style .next,
+.test-view .navigation-buttons-style .previous,
+.test-view .navigation-buttons-style .submit {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    background-color: var(--app-blue);
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 8pxpx;
+}
+
+.test-view .navigation-buttons-style .next,
+.test-view .navigation-buttons-style .submit
+{ margin-left: 12px; }
+
+/* Initial Options */
+/* Initial Options */
+.IntialOptionView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(0px);
+    /*  */
+    display: grid;
+    place-items: center;
+}
+
+.IntialOptionView .initial-option-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    z-index: 0;
+}
+
+.IntialOptionView .initial-option-container .app-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntialOptionView .initial-option-container .app-container .logo-container {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(0, 0, 0, 0);
+    z-index: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+}
+
+.IntialOptionView .initial-option-container .app-container .logo-container .image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.IntialOptionView .initial-option-container .app-container .logo-container .image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.IntialOptionView .initial-option-container .app-container .app-title {
+    position: relative;
+    color: var(--app-blue);
+    font-family: 'Cabin Sketch', Arial, Helvetica, sans-serif !important;
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 12px;
+}
+
+.IntialOptionView .initial-option-container .or-splitter {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 24px 0;
+}
+
+.IntialOptionView .initial-option-container .inition-options {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+}
+.IntialOptionView .initial-option-container .inition-options.exam-option {
+    margin-top: 30px;
+}
+.IntialOptionView .initial-option-container .inition-options.invite-option {
+    margin: 0;
+}
+
+.IntialOptionView .initial-option-container .inition-options .intial-option-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.IntialOptionView .initial-option-container .inition-options .intial-option-description {
+    position: relative;
+    max-width: 70%;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.IntialOptionView .initial-option-container .inition-options .take-exam-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 24px;
+    border: none;
+    background: linear-gradient( var(--app-green-45), var(--app-blue));
+    background-color: var(--app-blue);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+.IntialOptionView .initial-option-container .inition-options .invitation-field {
+    position: relative;
+    width: 250px;
+    height: 34px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0, 0.15);
+    margin: 12px 0;
+    text-align: center;
+}
+
+.IntialOptionView .initial-option-container .inition-options .invitation-submit-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 24px;
+    border: none;
+    background: linear-gradient( var(--app-green-45), var(--app-blue));
+    background-color: var(--app-blue);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 40px;
+    transition: 0.3 ease-in-out;
+}
+
+.IntialOptionView .initial-option-container .inition-options .error-message {
+    position: relative;
+    color: var(--app-red);
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.IntialOptionView .get-exam-ready {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntialOptionView .get-exam-ready .text {
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.IntialOptionView .get-exam-ready .count-down {
+    position: relative;
+    color: var(--app-blue);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+/* Completed View */
+/* Completed View */
+.CompletedView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000000000000000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1px);
+    display: grid;
+    place-items: center;
+}
+
+.CompletedView .completed-view-container {
+    position: relative;
+    width: fit-content;
+    max-width: calc(60%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.CompletedView .title-logo-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 40px;
+}
+
+.CompletedView .title-logo-container .logo-container {
+    width: 50px;
+    height: 50px;
+}
+
+.CompletedView .completed-view-container .score {
+    position: relative;
+    margin-top: 12px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.CompletedView .completed-view-container .next-step-explaination {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: rgb(0, 0, 0, 0.75);
+}
+
+.CompletedView .completed-view-container .action-button {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 24px;
+    color: white;
+    background-color: var(--app-blue);
+    border: none;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 60px;
+    box-shadow: 0 4px 4px 3px var(--app-blue-20), 0 4px 8px 2px rgb(0, 0, 0, 0.05);
+    box-shadow: var(--app-blue-20) 0px 8px 24px, rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@keyframes nudge {
+    50% {
+        transform: translate(15% , 0);
+    }
+    50% {
+        transform: scaleY(1.025) translate(15.5%, 0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes failAnimate {
+    25% {
+        transform: rotate(-2.5deg);
+    }
+    25% {
+        transform: scaleY(1.025) rotate(-2.5deg);;
+    }
+    50% {
+        transform: rotate(5deg);;
+    }
+    75% {
+        transform: rotate(-2.5deg);
+    }
+}
+
+.IntialOptionView .lot-load-container,
+.CompletedView .lot-load-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    opacity: 0.75;
+}
+.IntialOptionView .lot-load-container { margin-top: 0px; opacity: 1; }

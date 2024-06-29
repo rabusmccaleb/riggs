@@ -1,0 +1,89 @@
+.DunbarSubThreadVoting {
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    height: fit-content;
+    padding: 20px 30px;
+    background-color: white;
+    z-index: 500000000;
+    transform: translate(-50%, calc(-50% - 30px));
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.075);
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .static-view-title {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 12px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    font-weight: 16px;
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .sub-thread-title {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+    text-align: left;
+    font-size: 18px;
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .sub-thread-description {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 15px;
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons .yes,
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons .no
+{
+    position: relative;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 12px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons button:hover { transform: scale(1.1);}
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons button:first-of-type { margin: 0; }
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons .yes {
+    background-color: var(--app-green-50);
+    border: solid 2.5px var(--app-green-90);
+}
+
+.DunbarSubThreadVoting .dunbar-sub-thread-content .vote-buttons .no {
+    background-color: var(--app-red-50);
+    border: solid 2.5px var(--app-red-90);
+}

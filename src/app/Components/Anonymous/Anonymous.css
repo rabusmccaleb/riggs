@@ -1,0 +1,310 @@
+.anonymous-posts {
+    --anonym-content-top-margin: 12px;
+    position: relative;
+    width: calc(100% - 24px);
+    /* height: 350px; */
+    height: calc(500px);
+    background: linear-gradient( rgba(20,20,20,1), var(--app-blue-5), rgba(20,20,20,1));
+    /* url("https://images-assets.nasa.gov/image/PIA00116/PIA00116~orig.jpg") */
+    background-color: black;
+    margin-left: var(--anonym-content-top-margin);
+    margin-top: var(--anonym-content-top-margin);
+    border-radius: 12px;
+}
+
+.anonymous-posts .anonymous-content-view {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.anonymous-content-view .view-title {
+    position: relative;
+    width: fit-content;
+    height: calc(100% - 52px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin: var(--anonym-content-top-margin) 26px;
+}
+
+.anonymous-content-view .view-title {}
+
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+/*  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card  Ananomous Post Card */
+.ananomous-post-card {
+    position: relative;
+    z-index: 0;
+    background: linear-gradient( black, var(--app-blue-20));
+    background-color: black;
+    width: 400px;
+    height: calc(100%  - var(--anonym-content-top-margin) - var(--anonym-content-top-margin) - var(--anonym-content-top-margin) - var(--anonym-content-top-margin)  );
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.ananomous-post-card:hover {
+    background-color: rgba(15, 15, 15,1);
+    transform: scale(1.025);
+    box-shadow: 0 0 4px 1px  rgba(255, 255, 255, 0.05);
+}
+
+.ananomous-post-card:first-of-type {
+    /* margin-left: 0; */
+}
+
+.ananomous-post-card:last-of-type {
+    margin-right: 40px;
+}
+
+.ananomous-post-card .background-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+}
+
+.ananomous-post-card .background-container .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+}
+
+.ananomous-post-card .background-container .background-image-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* I guess the major issue is that I feel burdended for doing regular things like just working. I can't fix that. Reliquish control and just protect that which is sacred. */
+.ananomous-post-card .background-container .background-image-container .image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+/* Content */
+.ananomous-post-card .content-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+}
+
+.ananomous-post-card .content-container .content-view {
+    position: relative;
+    height: fit-content;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: transparent;
+}
+
+.ananomous-post-card .content-container .content-view .date-container {
+    position: relative;
+    height: fit-content;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+/* Title */
+.ananomous-post-card .content-container .content-view .text-content-container,
+.ananomous-post-card .content-container .content-view .title-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ananomous-post-card .content-container .content-view .title-container h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white !important;
+}
+
+/* Content */
+.ananomous-post-card .content-container .content-view .text-content-container {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.ananomous-post-card .content-container .content-view .text-content-container p {}
+
+/* Repsonse */
+.ananomous-post-card .content-container .content-view .anonymous-response-container {
+    position: relative;
+    height: auto;
+    width: calc(100%);
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.ananomous-post-card .content-container .content-view .anonymous-response-container .response-options {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2px 0;
+}
+
+.ananomous-post-card .content-container .content-view .anonymous-response-container .response-options .emoji-response-item {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.ananomous-post-card .content-container .content-view .anonymous-response-container .response-options .emoji-response-item:hover {
+    transform: scale(1.15);
+}
+
+.ananomous-post-card .content-container .content-view .anonymous-response-container .response-options .emoji-response-item label {
+    opacity: 0.5;
+}
+
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+/* Add A Post Button */
+.add-anonymous-post-button {
+    position: relative;
+    width: 240px;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(var(--app-blue-50), rgba(0,0,0,0.25));
+    background-color: var(--app-blue);
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.add-anonymous-post-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(var(--app-blue-50), rgba(255,255,255,0.1));
+    background-color: var(--app-blue);
+}
+
+.add-anonymous-post-button .add-icon {
+    font-size: 40px;
+    font-family: "M PLUS Rounded 1c" !important;
+    font-weight: 800;
+}
