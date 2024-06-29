@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# 🌎 Big World Project:
+## A Social Community App Built for people to share and celebrate everything bright & nerdy. [🔗 Link](https://bigworldproject.com/auth)
+![Screenshot 2024-06-10 at 4 02 34 PM](https://github.com/rabusmccaleb/riggs/assets/69118018/12d502cd-a28c-485d-b6ca-7f8f4d479fd1)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#
+#### Much of the code strongly tied to the backend infrastructure had to be ignored on push. 👉 [Git Ignore](https://github.com/rabusmccaleb/riggs/blob/master/.gitignore)
+#
+✅ [Live Chat Demo](https://drive.google.com/file/d/18oXEJBsO1DLqTOAtyy75exIQbLde6iEp/view?usp=sharing) 👉 The code is deeply connected to the backend infrastructure
 
-## Available Scripts
+✅ [Home](https://drive.google.com/file/d/1GSlReVAf6HGmBQC3Q18x61kQcS2r7ywF/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/blob/master/src/app/Pages/Home)
 
-In the project directory, you can run:
+✅ [Dunbar Colony](https://drive.google.com/file/d/1q0VoR0uSj7yiuH40d10WfjsW2KbcBW7H/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/DunbarColony)
 
-### `npm start`
+✅ [Solar System](https://drive.google.com/file/d/1ikj4HZKidERGdHxxDAfIzgNBhlI3J8Fu/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Components/SolarSystem)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+✅ [Theater Mode](https://drive.google.com/file/d/1oec4S16RUQmFM91cs479wFVBOZhcMCtQ/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Components/Theater)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+✅ [Exam View](https://drive.google.com/file/d/1W_yUBCs91aqoSAs9o5pUntMUAQ_aTCxV/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/TestView)
 
-### `npm test`
+✅ [New User](https://drive.google.com/file/d/1nUxMSDJnYyswEYg4AeRUrX5Mz9IQUILP/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/NewUserPage)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ [Filter Controls](https://drive.google.com/file/d/1p6l0i-kItNnzTBtdGrTaxjKjvHc0AtXb/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/FilterView)
 
-### `npm run build`
+✅ [Direct Messages](https://drive.google.com/file/d/1EmeeFZQ2ZEHEDOadhiwkzaJ7-f2xObTk/view?usp=sharing) 👉 [The React Component is so deeply connected to the backend infrastructure.](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/Messages)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✅ [Profile & Edit Profile](https://drive.google.com/file/d/1zBZGh6ESMRAOw5twfAr4nwQlFXgqo6JW/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/Profile)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ [Favorites](https://drive.google.com/file/d/1nkqHUyTsMp1mxGK9iNgpPFSlGcDD_SKX/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Pages/FavoritesView)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ [Desired Features](https://drive.google.com/file/d/1u5OS4Wez5yUxYdYXuEC1VlC33yfUBgNn/view?usp=sharing) 👉 [Code Reference Without Backend Infrastructure](https://github.com/rabusmccaleb/riggs/tree/master/src/app/Components/DesiredFeatures)
 
-### `npm run eject`
+#### A Few Other Interesting Items:
+- [The Mobile Application](https://drive.google.com/file/d/1ETFg0RXf8_nKBPukgl049Sjp8YwYm_VH/view?usp=sharing)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Math Mode](https://drive.google.com/file/d/1OksoPkUyIaEacrdSkdfXSULr9YPs0DOq/view?usp=sharing)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Notifications](https://drive.google.com/file/d/1DlvbZwqVRFPlKKXJWkaSITZa7hih7ezJ/view?usp=sharing)
